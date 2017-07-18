@@ -56,7 +56,6 @@ LOG.info("Lorsque j'évalue l'addition de l'expression 1+3+4");
 int somme = calcul.additionner("xx");
 
 
-//Assert.
 
 
 
