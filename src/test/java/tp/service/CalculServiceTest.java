@@ -1,8 +1,9 @@
 package tp.service;
 
 import org.junit.Test;
-import org.junit.Assert;
+//import org.junit.Assert;
 import org.slf4j.Logger;
+import static org.assertj.core.api.Assertions.*;
 
 import org.slf4j.LoggerFactory;
 
@@ -33,8 +34,8 @@ int somme = calcul.additionner("1+3+4");
 
 
 LOG.info("Alors j'obtiens le résultat 8");
-
-Assert.assertEquals(8, somme);
+assertThat(somme).isEqualTo(8);
+//Assert.assertEquals(8, somme);
 
 
 
